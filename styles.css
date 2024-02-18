@@ -1,0 +1,20 @@
+body {
+    background-color: hsl(33, 100%, 98%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.balance{
+    background-color: hsl(10, 79%, 65%);
+    
+}
+.bal{
+    font-size: 18px;
+}
+.spend, .darkBrown{
+    color: hsl(25, 47%, 15%);
+}
+.mediumBrown{
+    color: hsl(28, 10%, 53%);
+}

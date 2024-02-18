@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Expenses chart component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="./styles.css" />
+    <!-- tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- js -->
+    <script src="./script.js"></script>
+  </head>
+
+  <body>
+    <div class="flex flex-col sm:flex-row rounded-xl mb-6 p-6 shadow balance">
+      <div class="left w-full sm:w-4/5">
+        <p class="bal font-semibold text-white text-start">My balance</p>
+        <p class="font-bold text-white text-2xl">$921.48</p>
+      </div>
+      <div class="flex justify-end">
+        <img class="img-fluid h-10" src="./images/logo.svg" />
+      </div>
+    </div>
+
+    <div class="chart rounded-xl bg-white p-4 shadow-xl">
+      <p class="spend font-bold text-2xl ml-4">Spending - Last 7 days</p>
+
+      <!-- chart -->
+      <canvas id="myCanvas" class="py-8 h-64 w-full">
+        <!-- chart content displayed here -->
+      </canvas>
+      <hr />
+      <div class="flex flex-col sm:flex-row py-4">
+        <div class="left w-full">
+          <p class="mediumBrown text-sm">Total this month</p>
+          <p class="darkBrown text-4xl font-bold">$478.33</p>
+        </div>
+        <div class="flex justify-end w-full text-sm">
+          <div class="flex flex-col items-end">
+            <p class="darkBrown font-bold">+2.4%</p>
+            <p class="mediumBrown">from last month</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="attribution mt-4">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by
+      <a href="https://github.com/SusanGithaigaN">Susan Githaiga</a>.
+    </div>
+  </body>
+</html>
